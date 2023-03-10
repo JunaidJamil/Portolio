@@ -1,0 +1,186 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: brown;
+  font-weight: bold;
+}
+
+li a:hover {
+  color: red;
+  transition: 0.2s;
+}
+
+header {
+  position: relative;
+  /* padding: 0 2rem; */
+
+}
+
+.navi {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+
+}
+
+.navi .logo a {
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+
+.navi .link {
+  display: flex;
+  gap: 2rem;
+}
+
+.navi .toggle_btn {
+  color: brown;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.action_btn {
+  background-color: orange;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transform: scale 0.2sec ease;
+}
+
+.action_btn:hover {
+  scale: 1.05;
+  color: rgb(0, 0, 0);
+}
+
+.action_btn:active {
+  scale: 0.95;
+}
+
+/* Dropdown menu */
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 300px;
+  background-color: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* Responsive Section */
+@media(max-width:992px) {
+
+  .navi .link,
+  .navi .action_btn {
+    display: none;
+
+  }
+
+  .navi .toggle_btn {
+    display: block;
+  }
+
+  .dropdown_menu {
+    display: block;
+  }
+ 
+}
+
+.banner img {
+  height: 100vh;
+  width: 100%;
+}
+.about{
+  margin-top: 70px;
+  width: 100%;
+  padding: 78px 0;
+  }
+  .about img{
+    height:60vh;
+  }
+  .In-about{
+    width: 540px;
+  }
+  .mine{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display:flex ;
+  align-items: center;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.In-about h1{
+  font-size: 70px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+
+}
+.In-about h4{
+  font-size:30px ;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+span{
+  color: purple;
+}
+
+button{
+  margin-top: 20px;
+  background-color: orange;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transform: scale 0.2sec ease;
+  
+}
+button:hover{
+  scale: 1.05;
+  color: rgb(0, 0, 0);
+}
